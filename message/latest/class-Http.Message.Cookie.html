@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Http\Message\Cookie</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Http.Message.html" title="Summary of Http\Message"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-Http.html">
+							Http<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Http.Message.html">
+							Message<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Http.Message.Authentication.html">
+							Authentication						</a>
+							</li>
+					<li>
+						<a href="namespace-Http.Message.Decorator.html">
+							Decorator						</a>
+							</li>
+					<li>
+						<a href="namespace-Http.Message.Encoding.html">
+							Encoding<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Http.Message.Encoding.Filter.html">
+							Filter						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Http.Message.Formatter.html">
+							Formatter						</a>
+							</li>
+					<li>
+						<a href="namespace-Http.Message.MessageFactory.html">
+							MessageFactory						</a>
+							</li>
+					<li>
+						<a href="namespace-Http.Message.StreamFactory.html">
+							StreamFactory						</a>
+							</li>
+					<li>
+						<a href="namespace-Http.Message.UriFactory.html">
+							UriFactory						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Http.Message.Cookie.html">Cookie</a></li>
+				<li><a href="class-Http.Message.CookieJar.html">CookieJar</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Http.Message.Authentication.html">Authentication</a></li>
+				<li><a href="class-Http.Message.Formatter.html">Formatter</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Cookie</h1>
+
+
+	<div class="description">
+	<p>Cookie Value Object.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		<b>Final</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Http.html">Http</a>\<a href="namespace-Http.Message.html">Message</a><br>
+		
+
+				<b>Author:</b>
+				Márk Sági-Kazár <a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#x6d;&#x61;&#114;&#x6b;&#46;s&#x61;&#103;&#x69;&#107;&#97;&#x7a;&#97;r&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;">&#x6d;&#x61;&#114;&#x6b;&#46;s&#x61;&#103;&#x69;&#107;&#97;&#x7a;&#97;r&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#109;</a><br>
+				<b>See:</b>
+				http://tools.ietf.org/search/rfc6265<br>
+			<b>Located at</b> <a href="source-class-Http.Message.Cookie.html#5-478" title="Go to source code">Cookie.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#56-90" title="Go to source code">__construct</a>( <span>string <var>$name</var></span>, <span>string|null <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$maxAge</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$domain</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$secure</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$httpOnly</var> = <span class="php-keyword1">false</span></span>, <span>DateTime <var>$expires</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+						<dt><var>$maxAge</var></dt>
+						<dd></dd>
+						<dt><var>$domain</var></dt>
+						<dd></dd>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+						<dt><var>$secure</var></dt>
+						<dd></dd>
+						<dt><var>$httpOnly</var></dt>
+						<dd></dd>
+						<dt><var>$expires</var></dt>
+						<dd>Expires attribute is HTTP 1.0 only and should be avoided.</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						InvalidArgumentException<br>If name, value or max age is not valid.
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getName" id="_getName">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getName">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#92-100" title="Go to source code">getName</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the name.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the name.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getValue" id="_getValue">
+
+			<td class="attributes"><code>
+				 public 
+				string|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getValue">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#102-110" title="Go to source code">getValue</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the value.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hasValue" id="_hasValue">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hasValue">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#112-120" title="Go to source code">hasValue</a>( )</code>
+
+			<div class="description short">
+				<p>Checks if there is a value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks if there is a value.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="withValue" id="_withValue">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_withValue">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#122-137" title="Go to source code">withValue</a>( <span>string|null <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the value.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getMaxAge" id="_getMaxAge">
+
+			<td class="attributes"><code>
+				 public 
+				integer|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getMaxAge">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#139-147" title="Go to source code">getMaxAge</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the max age.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the max age.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hasMaxAge" id="_hasMaxAge">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hasMaxAge">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#149-157" title="Go to source code">hasMaxAge</a>( )</code>
+
+			<div class="description short">
+				<p>Checks if there is a max age.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks if there is a max age.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="withMaxAge" id="_withMaxAge">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_withMaxAge">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#159-174" title="Go to source code">withMaxAge</a>( <span>integer|null <var>$maxAge</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the max age.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the max age.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$maxAge</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getExpires" id="_getExpires">
+
+			<td class="attributes"><code>
+				 public 
+				DateTime|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getExpires">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#176-184" title="Go to source code">getExpires</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the expiration time.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the expiration time.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						DateTime|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hasExpires" id="_hasExpires">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hasExpires">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#186-194" title="Go to source code">hasExpires</a>( )</code>
+
+			<div class="description short">
+				<p>Checks if there is an expiration time.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks if there is an expiration time.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="withExpires" id="_withExpires">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_withExpires">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#196-209" title="Go to source code">withExpires</a>( <span>DateTime <var>$expires</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Sets the expires.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the expires.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$expires</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isExpired" id="_isExpired">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isExpired">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#211-219" title="Go to source code">isExpired</a>( )</code>
+
+			<div class="description short">
+				<p>Checks if the cookie is expired.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks if the cookie is expired.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDomain" id="_getDomain">
+
+			<td class="attributes"><code>
+				 public 
+				string|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDomain">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#221-229" title="Go to source code">getDomain</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the domain.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the domain.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hasDomain" id="_hasDomain">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hasDomain">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#231-239" title="Go to source code">hasDomain</a>( )</code>
+
+			<div class="description short">
+				<p>Checks if there is a domain.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks if there is a domain.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="withDomain" id="_withDomain">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_withDomain">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#241-254" title="Go to source code">withDomain</a>( <span>string|null <var>$domain</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the domain.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the domain.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$domain</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="matchDomain" id="_matchDomain">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_matchDomain">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#256-278" title="Go to source code">matchDomain</a>( <span>string <var>$domain</var></span> )</code>
+
+			<div class="description short">
+				<p>Checks whether this cookie is meant for this domain.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks whether this cookie is meant for this domain.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$domain</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							http://tools.ietf.org/html/rfc6265#section-5.1.3<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPath" id="_getPath">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPath">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#280-288" title="Go to source code">getPath</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the path.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="withPath" id="_withPath">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_withPath">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#290-303" title="Go to source code">withPath</a>( <span>string|null <var>$path</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the path.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="matchPath" id="_matchPath">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_matchPath">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#305-317" title="Go to source code">matchPath</a>( <span>string <var>$path</var></span> )</code>
+
+			<div class="description short">
+				<p>Checks whether this cookie is meant for this path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks whether this cookie is meant for this path.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							http://tools.ietf.org/html/rfc6265#section-5.1.4<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isSecure" id="_isSecure">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isSecure">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#319-327" title="Go to source code">isSecure</a>( )</code>
+
+			<div class="description short">
+				<p>Checks whether this cookie may only be sent over HTTPS.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks whether this cookie may only be sent over HTTPS.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="withSecure" id="_withSecure">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_withSecure">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#329-342" title="Go to source code">withSecure</a>( <span>boolean <var>$secure</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets whether this cookie should only be sent over HTTPS.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets whether this cookie should only be sent over HTTPS.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$secure</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isHttpOnly" id="_isHttpOnly">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isHttpOnly">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#344-352" title="Go to source code">isHttpOnly</a>( )</code>
+
+			<div class="description short">
+				<p>Check whether this cookie may not be accessed through Javascript.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Check whether this cookie may not be accessed through Javascript.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="withHttpOnly" id="_withHttpOnly">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_withHttpOnly">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#354-367" title="Go to source code">withHttpOnly</a>( <span>boolean <var>$httpOnly</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets whether this cookie may not be accessed through Javascript.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets whether this cookie may not be accessed through Javascript.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$httpOnly</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="match" id="_match">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_match">#</a>
+			<code><a href="source-class-Http.Message.Cookie.html#369-381" title="Go to source code">match</a>( <span><code><a href="class-Http.Message.Cookie.html">Http\Message\Cookie</a></code> <var>$cookie</var></span> )</code>
+
+			<div class="description short">
+				<p>Checks if this cookie represents the same cookie as $cookie.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Checks if this cookie represents the same cookie as $cookie.</p>
+
+<p>This does not compare the values, only name, domain and path.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$cookie</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
